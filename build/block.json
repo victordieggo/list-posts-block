@@ -1,0 +1,38 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "create-block/list-posts-block",
+  "version": "0.1.0",
+  "title": "Listar posts",
+  "category": "widgets",
+  "icon": "smiley",
+  "description": "Bloco para exibir posts baseado nas categorias selecionadas.",
+  "example": {},
+  "supports": {
+    "color": {
+      "background": true,
+      "text": true
+    },
+    "html": false,
+    "typography": {
+      "fontSize": true
+    }
+  },
+  "attributes": {
+    "showBlock": {
+      "type": "boolean"
+    },
+    "title": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string"
+    }
+  },
+  "textdomain": "list-posts-block",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "render": "file:./render.php",
+  "viewScript": "file:./view.js"
+}
